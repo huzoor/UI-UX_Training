@@ -1,0 +1,55 @@
+<!DOCTYPE html5>
+<html>
+	<head>
+		<script type="text/javascript">
+			function add(){
+				//res = inp1 + inp2 
+			
+				var input1 = parseInt(document.getElementById('inp1').value);
+				var input2 = parseInt(document.getElementById('inp2').value);
+				var res = input1 + input2;
+				document.getElementById('res').value = res;
+				
+			}
+			function sub (){
+				var input1 = parseInt(document.getElementById('inp1').value);
+				var input2 = parseInt(document.getElementById('inp2').value);
+				var res = input1 - input2;
+				
+				document.getElementById('res').value = res;
+			}
+		</script>
+	</head>	
+	<body>
+		<div>
+			<h1>My Calc</h1>
+		</div>
+		<div>
+			<table border="1">
+				<tr>
+					<td>Inp1</td>
+					<td><input id="inp1" type="number" name=""></td>
+				</tr>
+				<tr>
+					<td>Inp2</td>
+					<td><input id="inp2" type="number" name=""></td>
+				</tr>
+				<tr>
+					<td>Result</td>
+					<td><input  id="res" type="number" name="" disabled="true"></td>
+				</tr>
+				<tr>
+					
+					<td rowspan="1" >
+						<button onclick="add()"> + </button>
+						<button onclick="sub()"> - </button>
+						<button onclick="mul()"> * </button>
+						<button onclick="div()"> / </button>
+					</td>
+					
+				</tr>
+			</table>
+		</div>
+	</body>
+	
+</html>
